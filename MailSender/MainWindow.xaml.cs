@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
+using System.Windows.Documents;
 
 namespace MailSender
 {
@@ -43,12 +44,22 @@ namespace MailSender
 				return;
 			}
 
+			// берем настройки smtp сервера
 			KeyValuePair<string, int> item2 = (KeyValuePair<string, int>)cbServerSelect.SelectionBoxItem;
 			string strSmtp = item2.Key.ToString();
 			int strPort = Convert.ToInt32(item2.Value);
 			// проверяем что правильно передали параметры SMTP Servera
-			MessageBox.Show(strSmtp + " : " + strPort);
+			//MessageBox.Show(strSmtp + " : " + strPort);
 
+			// проверяем RichTextBox на наличие текста			
+			if (new TextRange(RichText.Document.ContentStart, RichText.Document.ContentEnd).Text.Length < 3)
+			{
+				MessageBox.Show("Письмо не заполнено!");
+				MainTabControl.SelectedIndex++; 
+				return;
+			}
+
+			MessageBox.Show("отправлено");
 			_emailSender = new EmailSendServiceClass(strLogin, strPassword, strSmtp, strPort);
 			
 			//_emailSender.SendMails((IQueryable<Emails>)dgEmails.ItemsSource);

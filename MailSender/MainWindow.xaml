@@ -114,7 +114,7 @@ xmlns:TabSwitcher="clr-namespace:TabSwitcher;assembly=TabSwitcher"
                 </Grid>
             </TabItem>
             <TabItem Header="Редактор сообщений">
-                <RichTextBox/>
+                <RichTextBox Name="RichText"/>
             </TabItem>
         </TabControl>
     </DockPanel>
