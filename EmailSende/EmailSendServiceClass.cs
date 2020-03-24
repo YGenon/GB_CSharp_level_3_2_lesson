@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
-using System.Windows;
+using System.Windows; 
 
-namespace MailSender
+namespace EmailSend
 {
 	public class EmailSendServiceClass
 	{
@@ -18,7 +18,7 @@ namespace MailSender
 		private string _strSubject; // тема письма для отправки
 		#endregion
 
-		public EmailSendServiceClass(string sLogin, string sPassword, string sSmtp, int sPort)
+		 public EmailSendServiceClass(string sLogin, string sPassword, string sSmtp, int sPort)
 		{
 			_strLogin = sLogin;
 			_strPassword = sPassword;
@@ -51,13 +51,13 @@ namespace MailSender
 			}
 		}
 
-		public void SendMails(IQueryable<Emails> emails)
-		{
-			foreach (var email in emails)
-			{
-				SendMail(email.Email);
-			}
-		}
+		//public void SendMails(IQueryable<Emails> emails)
+		//{
+		//	foreach (var email in emails)
+		//	{
+		//		SendMail(email.Email);
+		//	}
+		//}
 	} 
 
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Documents;
+using EmailSend;
 
 namespace MailSender
 {
@@ -60,7 +61,7 @@ namespace MailSender
 			}
 
 			MessageBox.Show("отправлено");
-			_emailSender = new EmailSendServiceClass(strLogin, strPassword, strSmtp, strPort);
+			_emailSender = new EmailSend.EmailSendServiceClass(strLogin, strPassword, strSmtp, strPort);
 			
 			//_emailSender.SendMails((IQueryable<Emails>)dgEmails.ItemsSource);
 

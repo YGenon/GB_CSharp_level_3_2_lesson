@@ -1,0 +1,6 @@
+D:\GIT\GB_CSharp_level_3_2_lesson\EmailSende\obj\Debug\EmailSend.csprojAssemblyReference.cache
+D:\GIT\GB_CSharp_level_3_2_lesson\EmailSende\obj\Debug\EmailSend.csproj.CoreCompileInputs.cache
+D:\GIT\GB_CSharp_level_3_2_lesson\EmailSende\bin\Debug\EmailSender.dll
+D:\GIT\GB_CSharp_level_3_2_lesson\EmailSende\bin\Debug\EmailSender.pdb
+D:\GIT\GB_CSharp_level_3_2_lesson\EmailSende\obj\Debug\EmailSender.dll
+D:\GIT\GB_CSharp_level_3_2_lesson\EmailSende\obj\Debug\EmailSender.pdb

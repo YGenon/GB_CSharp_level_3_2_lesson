@@ -76,7 +76,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="EmailSendServiceClass.cs" />
     <Compile Include="Senders.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -150,6 +149,10 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EmailSende\EmailSend.csproj">
+      <Project>{947a3007-2cbd-4eff-808c-ef3309ebcadf}</Project>
+      <Name>EmailSend</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TabSwitcher\TabSwitcher.csproj">
       <Project>{8bce7e9b-c2f7-48d4-a00c-743da24c544a}</Project>
       <Name>TabSwitcher</Name>

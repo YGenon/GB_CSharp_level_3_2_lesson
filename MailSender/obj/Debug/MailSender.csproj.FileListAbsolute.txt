@@ -108,3 +108,5 @@ D:\GIT\GB_CSharp_level_3_2_lesson\MailSender\obj\Debug\MailSender.csproj.CoreCom
 D:\GIT\GB_CSharp_level_3_2_lesson\MailSender\obj\Debug\MailSender.csproj.CopyComplete
 D:\GIT\GB_CSharp_level_3_2_lesson\MailSender\obj\Debug\MailSender.exe
 D:\GIT\GB_CSharp_level_3_2_lesson\MailSender\obj\Debug\MailSender.pdb
+D:\GIT\GB_CSharp_level_3_2_lesson\MailSender\bin\Debug\EmailSender.dll
+D:\GIT\GB_CSharp_level_3_2_lesson\MailSender\bin\Debug\EmailSender.pdb
