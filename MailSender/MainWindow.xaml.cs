@@ -27,6 +27,21 @@ namespace MailSender
 			MainTabControl.SelectedIndex++;
 		}
 
+		private void AddSenders_OnClic(object sender, RoutedEventArgs e)
+		{
+			MessageBox.Show("Добавили отправителя");
+		}
+
+		private void EditSenders_OnClic(object sender, RoutedEventArgs e)
+		{
+			MessageBox.Show("Отредактировали отправителя");
+		}
+
+		private void RemoveSenders_OnClic(object sender, RoutedEventArgs e)
+		{
+			MessageBox.Show("Удалили отправителя");
+		}
+
 		private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
 		{
 			KeyValuePair<string, string> item = (KeyValuePair<string, string>) cbSenderSelect.SelectionBoxItem;
@@ -65,5 +80,7 @@ namespace MailSender
 			//_emailSender.SendMails((IQueryable<Emails>)dgEmails.ItemsSource);
 
 		}
+
+		
 	}
 }
