@@ -74,7 +74,7 @@ namespace MailSender
 				return;
 			}
 
-			MessageBox.Show("отправлено");
+			MessageBox.Show("отправлено \n" + strSmtp + " : " + strPort);
 			_emailSender = new EmailSend.EmailSendServiceClass(strLogin, strPassword, strSmtp, strPort);
 			
 			//_emailSender.SendMails((IQueryable<Emails>)dgEmails.ItemsSource);

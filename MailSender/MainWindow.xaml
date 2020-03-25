@@ -20,8 +20,8 @@ xmlns:WpfChoiceData="clr-namespace:WpfChoiceData;assembly=WpfChoiceData"
             <TabItem Header="Рассылка">
                 <DockPanel>
                     <ToolBarTray DockPanel.Dock="Top">
-                        <ToolBar Band="2">
-                            <WpfChoiceData:ChoiceDataControl Height="17" Add="AddSenders_OnClic" Edit="EditSenders_OnClic" Remove="RemoveSenders_OnClic"/>
+                        <ToolBar Band="2" Height="40" >
+                            <WpfChoiceData:ChoiceDataControl Add="AddSenders_OnClic" Edit="EditSenders_OnClic" Remove="RemoveSenders_OnClic"/>
                         </ToolBar>
                         <ToolBar >
                             <Label Content="Отправитель:"/>

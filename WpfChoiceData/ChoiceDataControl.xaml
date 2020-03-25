@@ -5,40 +5,21 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WpfChoiceData"
              mc:Ignorable="d" 
-             d:DesignHeight="17" Width="300">
-    <!--<Grid Margin="0,0,0,0">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition />
-            <ColumnDefinition/>
-            <ColumnDefinition />
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
-        <Label Content="Отправитель:" FontSize="15" Grid.Column="0" />
-        <ComboBox Name = "cbSenderSelect" Grid.Column="1"  SelectedIndex="0"/>
-        <Button ToolTip="Добавить отправителя"  Width="15" Grid.Column="2" Click="AddSenderButton_Click">
-            <Image Source="src/add.png"  Height="15" Margin="2"/>
-        </Button>
-        <Button ToolTip="Редактировать отправителя" Width="15" Grid.Column="3" Click="EditSenderButton_Click">
-            <Image Source="src/edit.png" Height="15" Margin="2"/>
-        </Button>
-        <Button ToolTip="Удалить отправителя"  Width="15" Grid.Column="4" Click="RemoveSenderButton_Click">
-            <Image Source="src/remove.png" Height="15" Margin="2"/>
-        </Button>
-    </Grid>-->
+            d:DesignHeight="30" Width="310">
 
-    <DockPanel LastChildFill="True" Margin="0,0,0,-12">
-        <Label Content="Отправитель:" FontSize="15" Grid.Column="0" />
-        <ComboBox Name = "cbSenderSelect" Width="105" SelectedIndex="0"/>
-        
+    <DockPanel Height="30" Opacity="1">
+        <Label Content="Отправитель:" FontSize="12"  />
+
+        <ComboBox Name = "cbSenderSelect" Width="155" Height="30" SelectedIndex="0"/>
+
         <Button ToolTip="Добавить отправителя"  Click="AddSenderButton_Click">
-            <Image Source="src/add.png" />
+            <Image Source="src/add.png" Height="15" Margin="2"/>
         </Button>
-        <Button ToolTip="Редактировать отправителя"  Click="EditSenderButton_Click">
-            <Image Source="src/edit.png" />
+        <Button  ToolTip="Редактировать отправителя" Click="EditSenderButton_Click">
+            <Image Source="src/edit.png" Height="15" Margin="2" />
         </Button>
         <Button ToolTip="Удалить отправителя"   Click="RemoveSenderButton_Click">
-            <Image Source="src/remove.png" />
+            <Image Source="src/remove.png" Height="15" Margin="2" />
         </Button>
     </DockPanel>
 </UserControl>
