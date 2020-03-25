@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EmailSender">
+      <HintPath>..\EmailSende\bin\Release\EmailSender.dll</HintPath>
+    </Reference>
     <Reference Include="EncrypterDll">
       <HintPath>..\..\..\source\repos\EncrypterDll\EncrypterDll\bin\Release\EncrypterDll.dll</HintPath>
     </Reference>
@@ -149,10 +152,6 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EmailSende\EmailSend.csproj">
-      <Project>{947a3007-2cbd-4eff-808c-ef3309ebcadf}</Project>
-      <Name>EmailSend</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TabSwitcher\TabSwitcher.csproj">
       <Project>{8bce7e9b-c2f7-48d4-a00c-743da24c544a}</Project>
       <Name>TabSwitcher</Name>
@@ -162,7 +161,9 @@
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="src\send.png" />
+    <Resource Include="src\send.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
