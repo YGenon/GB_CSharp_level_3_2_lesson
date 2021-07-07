@@ -6,6 +6,7 @@
  xmlns:local="clr-namespace:MailSender"
 xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
 xmlns:TabSwitcher="clr-namespace:TabSwitcher;assembly=TabSwitcher"
+xmlns:WpfChoiceData="clr-namespace:WpfChoiceData;assembly=WpfChoiceData"
  mc:Ignorable="d"
  Height="450" Width="800">
     <DockPanel>
@@ -19,7 +20,10 @@ xmlns:TabSwitcher="clr-namespace:TabSwitcher;assembly=TabSwitcher"
             <TabItem Header="Рассылка">
                 <DockPanel>
                     <ToolBarTray DockPanel.Dock="Top">
-                        <ToolBar>
+                        <ToolBar Band="2" Height="40" >
+                            <WpfChoiceData:ChoiceDataControl Add="AddSenders_OnClic" Edit="EditSenders_OnClic" Remove="RemoveSenders_OnClic"/>
+                        </ToolBar>
+                        <ToolBar >
                             <Label Content="Отправитель:"/>
                             <ComboBox Name = "cbSenderSelect" ItemsSource="{x:Static local:Senders.SendersDictionary}" Width="150" SelectedIndex="0">
                                 <ComboBox.ItemTemplate>
@@ -37,7 +41,7 @@ xmlns:TabSwitcher="clr-namespace:TabSwitcher;assembly=TabSwitcher"
                             <Button ToolTip="Удалить отправителя">
                                 <Image Source="src/remove.png" Height="15" Margin="2"/>
                             </Button>
-                        </ToolBar>
+                        </ToolBar>                           
                         <ToolBar>
                             <Label>Планировщик:</Label>
                             <Button ToolTip="Удалить отправителя">
@@ -78,6 +82,7 @@ xmlns:TabSwitcher="clr-namespace:TabSwitcher;assembly=TabSwitcher"
                                 <Image Source="src/remove.png" Height="15" Margin="2"/>
                             </Button>
                         </ToolBar>
+                        
                     </ToolBarTray>
                     <!--<DataGrid Name="dgEmails" ItemsSource="{x:Static local:Database.Emails}"
                               AutoGenerateColumns="False" IsReadOnly="True">

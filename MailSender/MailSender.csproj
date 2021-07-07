@@ -156,6 +156,10 @@
       <Project>{8bce7e9b-c2f7-48d4-a00c-743da24c544a}</Project>
       <Name>TabSwitcher</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WpfChoiceData\WpfChoiceData.csproj">
+      <Project>{c9aeb5d0-6e4e-4df7-a61d-48edd273f4a6}</Project>
+      <Name>WpfChoiceData</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />

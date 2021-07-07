@@ -1,0 +1,13 @@
+D:\GIT\GB_CSharp_level_3_2_lesson\WpfChoiceData\obj\Debug\WpfChoiceData.csprojAssemblyReference.cache
+D:\GIT\GB_CSharp_level_3_2_lesson\WpfChoiceData\obj\Debug\ChoiceDataControl.g.cs
+D:\GIT\GB_CSharp_level_3_2_lesson\WpfChoiceData\obj\Debug\WpfChoiceData_MarkupCompile.cache
+D:\GIT\GB_CSharp_level_3_2_lesson\WpfChoiceData\obj\Debug\WpfChoiceData_MarkupCompile.lref
+D:\GIT\GB_CSharp_level_3_2_lesson\WpfChoiceData\bin\Debug\WpfChoiceData.dll
+D:\GIT\GB_CSharp_level_3_2_lesson\WpfChoiceData\bin\Debug\WpfChoiceData.pdb
+D:\GIT\GB_CSharp_level_3_2_lesson\WpfChoiceData\obj\Debug\ChoiceDataControl.baml
+D:\GIT\GB_CSharp_level_3_2_lesson\WpfChoiceData\obj\Debug\WpfChoiceData.g.resources
+D:\GIT\GB_CSharp_level_3_2_lesson\WpfChoiceData\obj\Debug\WpfChoiceData.Properties.Resources.resources
+D:\GIT\GB_CSharp_level_3_2_lesson\WpfChoiceData\obj\Debug\WpfChoiceData.csproj.GenerateResource.cache
+D:\GIT\GB_CSharp_level_3_2_lesson\WpfChoiceData\obj\Debug\WpfChoiceData.csproj.CoreCompileInputs.cache
+D:\GIT\GB_CSharp_level_3_2_lesson\WpfChoiceData\obj\Debug\WpfChoiceData.dll
+D:\GIT\GB_CSharp_level_3_2_lesson\WpfChoiceData\obj\Debug\WpfChoiceData.pdb
